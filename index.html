@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Tutorial for  web development</h1>
+    </header>
+    <main>
+        <!-- 1. Introduction -->
+        <section id="introduction">
+            <h2>1. Introduction to JavaScript</h2>
+            <p>
+                JavaScript is a versatile, lightweight programming language used to make websites dynamic and
+                interactive.
+                It runs in the browser and can manipulate HTML and CSS.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Introduction</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript!</h1>
+    <script>
+        console.log("Hello, JavaScript!");
+    </script>
+</body>
+</html>
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 2. Variables and Data Types -->
+        <section id="variables">
+            <h2>2. Variables and Data Types</h2>
+            <p>
+                Variables store data in JavaScript. Use <code>let</code> and <code>const</code> instead of
+                <code>var</code> for better scoping.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+let name = "Siddharth";
+let age = 18;
+const isStudent = true;
+
+console.log(name, age, isStudent);
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 3. Operators -->
+        <section id="operators">
+            <h2>3. Operators in JavaScript</h2>
+            <p>
+                JavaScript supports arithmetic, comparison, and logical operators for various operations.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+let x = 10, y = 3;
+console.log(x + y);  // Addition
+console.log(x - y);  // Subtraction
+console.log(x * y);  // Multiplication
+console.log(x / y);  // Division
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 4. Functions -->
+        <section id="functions">
+            <h2>4. Functions</h2>
+            <p>
+                Functions are reusable blocks of code. Use arrow functions (<code>=></code>) for cleaner syntax.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Siddharth"));
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 5. Conditional Statements -->
+        <section id="conditionals">
+            <h2>5. Conditional Statements</h2>
+            <p>
+                Conditional statements allow decision-making in your code.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+let age = 18;
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 6. Loops -->
+        <section id="loops">
+            <h2>6. Loops</h2>
+            <p>
+                Loops allow repeating actions multiple times.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 7. Arrays -->
+        <section id="arrays">
+            <h2>7. Arrays</h2>
+            <p>
+                Arrays are lists of items. You can add, remove, or modify their elements.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+let fruits = ["Apple", "Banana", "Cherry"];
+fruits.push("Mango");  // Add item
+console.log(fruits);
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 8. DOM Manipulation -->
+        <section id="dom">
+            <h2>8. DOM Manipulation</h2>
+            <p>
+                Use JavaScript to dynamically interact with HTML elements.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+document.getElementById("demo").innerHTML = "Hello World!";
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section id="events">
+            <h2>9. JavaScript Events</h2>
+            <p>
+                Events are actions like clicking a button, hovering over an element, or pressing a key. Use event
+                listeners to respond to these actions.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button was clicked!");
+        });
+    </script>
+</body>
+</html>
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <!-- 10. ES6 Features -->
+        <section id="es6">
+            <h2>10. ES6 Features</h2>
+            <p>
+                ES6 (ECMAScript 2015) introduced modern JavaScript features like arrow functions, template literals,
+                destructuring, and more.
+            </p>
+            <div class="code-block">
+                <h3>Example Code:</h3>
+                <pre>
+                    <code>
+// Arrow Functions
+const greet = (name) => `Hello, ${name}!`;
+
+// Template Literals
+const message = `Welcome to JavaScript, ${greet("Siddharth")}`;
+
+// Destructuring
+const person = { name: "Siddharth", age: 18 };
+const { name, age } = person;
+
+console.log(message);
+console.log(`Name: ${name}, Age: ${age}`);
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 JavaScript Tutorial by Siddharth Deshmukh</p>
+    </footer>
+</body>
+
+</html>
